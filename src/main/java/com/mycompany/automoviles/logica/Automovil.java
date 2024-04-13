@@ -1,9 +1,17 @@
 package com.mycompany.automoviles.logica;
 
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-public class Automovil {
-    
+@Entity
+public class Automovil implements Serializable {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
+    
     private String modelo;
     private String marca;
     private String motor;
@@ -11,7 +19,11 @@ public class Automovil {
     private String patente;
     private int cantPuertas;
 
-    public Automovil(int id, String modelo, String marca, String motor, String color, String patente, int cantPuertas) {
+    public Automovil() {
+    }
+
+    public Automovil(int id, String modelo, String marca, String motor, 
+            String color, String patente, int cantPuertas) {
         this.id = id;
         this.modelo = modelo;
         this.marca = marca;
@@ -76,7 +88,4 @@ public class Automovil {
     public void setCantPuertas(int cantPuertas) {
         this.cantPuertas = cantPuertas;
     }
-    
-    
-    
 }
