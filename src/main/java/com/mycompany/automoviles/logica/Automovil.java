@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+//Creamos la entidad.
+
 @Entity
 public class Automovil implements Serializable {
     @Id
@@ -88,4 +90,5 @@ public class Automovil implements Serializable {
     public void setCantPuertas(int cantPuertas) {
         this.cantPuertas = cantPuertas;
     }
+    
 }
