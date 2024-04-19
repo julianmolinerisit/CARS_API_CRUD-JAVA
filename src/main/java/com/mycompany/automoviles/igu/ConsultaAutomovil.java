@@ -7,6 +7,7 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+//En esta pagina hacemos el get a los automoviles guardados en la db.
 
 public class ConsultaAutomovil extends javax.swing.JFrame {
 

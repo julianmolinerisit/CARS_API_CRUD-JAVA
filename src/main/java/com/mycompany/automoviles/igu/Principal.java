@@ -4,7 +4,8 @@ package com.mycompany.automoviles.igu;
 
 public class Principal extends javax.swing.JFrame {
 
-
+//Este es el home.
+    
     public Principal() {
         initComponents();
     }

@@ -6,6 +6,7 @@ package com.mycompany.automoviles.igu;
 
 import com.mycompany.automoviles.logica.Controladora;
 
+//En esta clase generamos la pantalla de carga de automoviles.
 
 public class AltaAutomovil extends javax.swing.JFrame {
 
